@@ -8,9 +8,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
-public class CheckBoxPage {
+public class BoxCheck {
 
-	// Test Case: Validate when the toggle all check box is CHECKED, all check boxes for list items are also CHECKED ON.
+	// Test Case: Validate when the toggle all check box is checked, all check boxes for list items are also checked.
 
 	WebDriver driver;
 	@FindBy(how = How.NAME, using = "allbox")
@@ -25,7 +25,7 @@ public class CheckBoxPage {
 	String beforeXpath = "//input[@name = 'todo[";
 	String afterXpath = "]']";
 
-	public CheckBoxPage(WebDriver driver) {
+	public BoxCheck(WebDriver driver) {
 		this.driver = driver;
 
 	}
