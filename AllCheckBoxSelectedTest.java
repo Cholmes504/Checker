@@ -11,7 +11,7 @@ import util.BrowserFactory;
 
 public class AllCheckBoxSelectedTest {
 	
-	// Test Case: Validate when the toggle all check box is CHECKED, all check boxes for list items are also CHECKED ON.
+	// Test Case: Validate when the toggle all check box has been checked, all check boxes for list items are also checked.
 
 	WebDriver driver;
 	CheckBoxPage checkboxpage;
