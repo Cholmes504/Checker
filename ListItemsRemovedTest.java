@@ -7,11 +7,11 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import pages.CheckBoxPage;
-import util.BrowserFactory;
+import util.Browse;
 
 public class ListItemsRemovedTest {
 
-	// Validate that all list item could be removed using the remove button and when
+	// Validate that the list items can be removed using the remove button and when
 	// "Toggle All" functionality is on.
 
 	WebDriver driver;
@@ -19,7 +19,7 @@ public class ListItemsRemovedTest {
 	
 	@BeforeMethod
 	public void navigatetoURL() {
-		driver = BrowserFactory.initBrowser();
+		driver = Browse.initBrowser();
 		checkboxpage = PageFactory.initElements(driver, CheckBoxPage.class);
 
 	}
@@ -31,6 +31,6 @@ public class ListItemsRemovedTest {
 	}
 	@AfterMethod
 	public void teardown() {
-		BrowserFactory.teardown();
+		Browse.teardown();
 	}
 }
