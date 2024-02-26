@@ -6,8 +6,8 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import pages.CheckBoxPage;
-import util.BrowserFactory;
+import pages.BoxCheck;
+import util.Browse;
 
 public class RemoveOneListItemTest {
 
@@ -19,9 +19,9 @@ public class RemoveOneListItemTest {
 	@BeforeMethod
 	public void removeAllTest() {
 
-		driver = BrowserFactory.initBrowser();
+		driver = Browse.initBrowser();
 
-		singlecheckbox = PageFactory.initElements(driver, CheckBoxPage.class);
+		singlecheckbox = PageFactory.initElements(driver, BoxCheck.class);
 	}
 
 	@Test
