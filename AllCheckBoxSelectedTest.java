@@ -7,7 +7,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import pages.CheckBoxPage;
-import util.BrowserFactory;
+import util.Browse;
 
 public class AllCheckBoxSelectedTest {
 	
@@ -33,7 +33,7 @@ public class AllCheckBoxSelectedTest {
 
 	@AfterMethod
 	public void teardown() {
-		BrowserFactory.teardown();
+		Browse.teardown();
 	}
 
 }
