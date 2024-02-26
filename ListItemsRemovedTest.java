@@ -6,7 +6,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import pages.CheckBoxPage;
+import pages.BoxCheck;
 import util.Browse;
 
 public class ListItemsRemovedTest {
@@ -15,7 +15,7 @@ public class ListItemsRemovedTest {
 	// "Toggle All" functionality is on.
 
 	WebDriver driver;
-	CheckBoxPage checkboxpage;
+	BoxCheck checkboxpage;
 	
 	@BeforeMethod
 	public void navigatetoURL() {
