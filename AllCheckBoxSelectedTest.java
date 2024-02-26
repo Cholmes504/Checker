@@ -6,7 +6,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import pages.CheckBoxPage;
+import pages.BoxCheck;
 import util.Browse;
 
 public class AllCheckBoxSelectedTest {
@@ -14,7 +14,7 @@ public class AllCheckBoxSelectedTest {
 	// Test Case: Validate when the toggle all check box has been checked, all check boxes for list items are also checked.
 
 	WebDriver driver;
-	CheckBoxPage checkboxpage;
+	BoxCheck checkboxpage;
 	
 	@BeforeMethod
 	public void navigatetoURL() {
